@@ -1,10 +1,39 @@
 import React from "react"
+import { Text, Button, StyleSheet, Alert } from 'react-native'
+function GetStarted() {
 
-function loginSignUp() {
+    function buttonHandler (e) {
+        Alert.alert(
+            "you did a thing",
+            "good Job",
+            [
+                {
+                    text: "Cancel",
+                    onPress: () => console.log("cancel pressed"),
+                    style: "cancel"
+                },
+                { text: 'ok', onPress: () => console.log('ok pressed')}
+            ]
+        )
+    }
+
     return(
         <>
+            <Text>You have no characters.</Text>
+            <Text>Get started with a new character now</Text>
+            <Button
+                style={gsStyle.buttons}
+                onPress={buttonHandler}
+                title="Create Character"
+            />
         </>
     )
 }
 
-export default loginSignUp;
+const gsStyle = StyleSheet.create({
+    buttons: {
+        margin: 100
+    }
+})
+
+export default GetStarted;

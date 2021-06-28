@@ -1,20 +1,22 @@
-import React from "react"
-import { Text, Button, StyleSheet, Alert } from 'react-native'
+import React, {useState}from "react"
+import { Text, Button, StyleSheet, Alert, Modal } from 'react-native'
 function GetStarted() {
 
+    const [modalVisible, setModalVisible] = useState(false);
+
     function buttonHandler (e) {
-        Alert.alert(
-            "you did a thing",
-            "good Job",
-            [
-                {
-                    text: "Cancel",
-                    onPress: () => console.log("cancel pressed"),
-                    style: "cancel"
-                },
-                { text: 'ok', onPress: () => console.log('ok pressed')}
-            ]
-        )
+        // Alert.alert(
+        //     "you did a thing",
+        //     "good Job",
+        //     [
+        //         {
+        //             text: "Cancel",
+        //             onPress: () => console.log("cancel pressed"),
+        //             style: "cancel"
+        //         },
+        //         { text: 'ok', onPress: () => console.log('ok pressed')}
+        //     ]
+        // )
     }
 
     return(
@@ -26,6 +28,10 @@ function GetStarted() {
                 onPress={buttonHandler}
                 title="Create Character"
             />
+            <Modal
+            >
+
+            </Modal>
         </>
     )
 }

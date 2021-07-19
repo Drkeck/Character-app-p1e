@@ -1,10 +1,11 @@
 import React, {useState}from "react"
-import { Text, Button, StyleSheet, Alert, Modal } from 'react-native'
-function GetStarted() {
+import { Text, Button, StyleSheet, Alert, Modal, View } from 'react-native'
 
+function GetStarted(btn) {
     const [modalVisible, setModalVisible] = useState(false);
 
     function buttonHandler (e) {
+        setModalVisible(true)
         // Alert.alert(
         //     "you did a thing",
         //     "good Job",
@@ -20,26 +21,31 @@ function GetStarted() {
     }
 
     return(
-        <>
+        <View>
             <Text>You have no characters.</Text>
             <Text>Get started with a new character now</Text>
             <Button
-                style={gsStyle.buttons}
+                style={btn}
                 onPress={buttonHandler}
                 title="Create Character"
             />
             <Modal
+            animationType="fade"
+            visible={modalVisible}
+            onRequestClose={() => {
+                setModalVisible(!modalVisible)
+            }}
             >
-
+                <View>
+                    <Text>this is for picking a Game type</Text>
+                </View>
             </Modal>
-        </>
+        </View>
     )
 }
 
-const gsStyle = StyleSheet.create({
-    buttons: {
-        margin: 100
-    }
+const gsStyles = StyleSheet.create({
+
 })
 
 export default GetStarted;

@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Lets make this a Pathfinder 1e app for new players</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="auto"/>
     </View>
   );
 }

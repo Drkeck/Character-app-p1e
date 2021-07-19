@@ -1,0 +1,78 @@
+{
+    "pathfinnder 1st edition example": {
+        "name": "",
+        "race": "",
+        "size": "",
+        "alignment": "",
+        "class": "",
+        "attributes": {
+            "strength": "",
+            "dextarity": "",
+            "constitution": "",
+            "inteligence": "",
+            "wisdom": "",
+            "charisma": ""
+        },
+        "health": {
+            "hit die": "",
+            "total": "",
+            "current": "",
+            "temp": ""
+        },
+        "combat": {
+            "inititive": "",
+            "base attack bonus": "",
+            "cmd":"",
+            "cmb":"",
+            "attacks":{
+                "Melee": [{}],
+                "Ranged": [{}],
+                "Thrown": [{}],
+                "Percision": ""
+            },
+            "Defense": {
+                "ac": {
+                    "otherModifiers":{
+                        "dodge": "",
+                        "deflection": ""
+                    },
+                    "items":[{
+                        "name":"hide shirt",
+                        "bonus":"3",
+                        "type":"light",
+                        "armorCheckPenalty":"-1",
+                        "spellFailure":"10%",
+                        "weight":"18"
+                    }]
+                },
+                "Dr": "",
+                "Sr": "",
+                "resistance": "",
+                "immune": "",
+                "Saves": {
+                    "Fortitude": {
+                        "misc": "",
+                        "Reflex for fort": true
+                    },
+                    "Reflex": {
+                        "misc": "",
+                        "Evasion": true
+                    },
+                    "Will": {
+                        "misc": "",
+                        "Reflex for fort": true
+                    }
+                }
+            }
+            
+        }
+
+
+
+
+    },
+
+    "Dungeons and dragons 5th edition example": {
+
+    }
+}

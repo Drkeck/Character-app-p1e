@@ -28,7 +28,7 @@
                 "Melee": [{}],
                 "Ranged": [{}],
                 "Thrown": [{}],
-                "Percision": ""
+                "Precision": ""
             },
             "Defense": {
                 "ac": {
@@ -37,12 +37,12 @@
                         "deflection": ""
                     },
                     "items":[{
-                        "name":"hide shirt",
-                        "bonus":"3",
-                        "type":"light",
-                        "armorCheckPenalty":"-1",
-                        "spellFailure":"10%",
-                        "weight":"18"
+                        "name":"",
+                        "bonus":"",
+                        "type":"",
+                        "armorCheckPenalty":"",
+                        "spellFailure":"",
+                        "weight":""
                     }]
                 },
                 "Dr": "",

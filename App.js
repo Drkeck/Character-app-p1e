@@ -1,12 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
+import GetStarted from './src/Get-Started';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Lets make this a Pathfinder 1e app for new players</Text>
-      <StatusBar style="auto"/>
+      <GetStarted style={styles.Button}></GetStarted>
+      <Button
+        style={styles.btn}
+        title="test"
+      />
+      <StatusBar 
+        translucent={true}
+        animated={true}
+      />
     </View>
   );
 }
@@ -18,4 +26,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+  Button: {
+    margin: 10,
+    color: "#de5050"
+  },
+
+});  

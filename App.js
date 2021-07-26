@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import CharacterSheet from './src/character-sheet';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Lets make this a Pathfinder 1e app for new players</Text>
+      <CharacterSheet />
       <StatusBar style="auto"/>
     </View>
   );

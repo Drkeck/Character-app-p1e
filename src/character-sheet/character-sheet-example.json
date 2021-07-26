@@ -1,5 +1,5 @@
 {
-    "pathfinnder 1st edition example": {
+    "pathfinder 1st edition example": {
         "name": "",
         "race": "",
         "size": "",
@@ -7,9 +7,9 @@
         "class": "",
         "attributes": {
             "strength": "",
-            "dextarity": "",
+            "dexterity": "",
             "constitution": "",
-            "inteligence": "",
+            "intelligence": "",
             "wisdom": "",
             "charisma": ""
         },
@@ -20,7 +20,7 @@
             "temp": ""
         },
         "combat": {
-            "inititive": "",
+            "initiative": "",
             "base attack bonus": "",
             "cmd":"",
             "cmb":"",
@@ -52,19 +52,106 @@
                 "Saves": {
                     "Fortitude": {
                         "misc": "",
-                        "Reflex for fort": true
+                        "Stalwart": false
                     },
                     "Reflex": {
                         "misc": "",
-                        "Evasion": true
+                        "Evasion": false
                     },
                     "Will": {
                         "misc": "",
-                        "Reflex for fort": true
+                        "stalwart": false
                     }
                 }
+            },
+            "movement": {
+                "base speed": "",
+                "with armor": "",
+                "fast Movement": "",
+                "flying": "",
+                "swim": "",
+                "climb": "",
+                "burrow": ""
+            },
+            "feats":[{}],
+            "special abilities": [{}],
+            "traits":[{}],
+            "money":{
+                "Platinum": "",
+                "Gold": "",
+                "Silver": "",
+                "copper": "",
+                "gems": "",
+                "other": ""
+            },
+            "Gear": [{}],
+            "Magic":{
+                "domain/bloodline/school": {
+                    "name": "",
+                    "abilities": [{}]
+                },
+                "spell like":[{}],
+                "level 0":{
+                    "known": "",
+                    "DC": "",
+                    "per Day": "",
+                    "spells": [{}]
+                },
+                "level 1":{
+                    "known": "",
+                    "DC": "",
+                    "per Day": "",
+                    "spells": [{}]
+                },
+                "level 2":{
+                    "known": "",
+                    "DC": "",
+                    "per Day": "",
+                    "spells": [{}]
+                },
+                "level 3":{
+                    "known": "",
+                    "DC": "",
+                    "per Day": "",
+                    "spells": [{}]
+                },
+                "level 4":{
+                    "known": "",
+                    "DC": "",
+                    "per Day": "",
+                    "spells": [{}]
+                },
+                "level 5":{
+                    "known": "",
+                    "DC": "",
+                    "per Day": "",
+                    "spells": [{}]
+                },
+                "level 6":{
+                    "known": "",
+                    "DC": "",
+                    "per Day": "",
+                    "spells": [{}]
+                },
+                "level 7":{
+                    "known": "",
+                    "DC": "",
+                    "per Day": "",
+                    "spells": [{}]
+                },
+                "level 8":{
+                    "known": "",
+                    "DC": "",
+                    "per Day": "",
+                    "spells": [{}]
+                },
+                "level 9":{
+                    "known": "",
+                    "DC": "",
+                    "per Day": "",
+                    "spells": [{}]
+                }
             }
-            
         }
 
 

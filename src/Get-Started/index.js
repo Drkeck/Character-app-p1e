@@ -32,6 +32,7 @@ function GetStarted(btn) {
             <Modal
             animationType="fade"
             visible={modalVisible}
+            style
             onRequestClose={() => {
                 setModalVisible(!modalVisible)
             }}

@@ -8,7 +8,7 @@ export default function App() {
     <View style={styles.container}>
       <GetStarted style={styles.Button}></GetStarted>
       <Button
-        style={styles.btn}
+        style={styles.button}
         title="test"
       />
       <StatusBar 

@@ -1,20 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import GetStarted from './src/Get-Started';
+import CharacterSheet from './src/character-sheet';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <GetStarted style={styles.Button}></GetStarted>
-      <Button
-        style={styles.button}
-        title="test"
-      />
-      <StatusBar 
-        translucent={true}
-        animated={true}
-      />
+      <CharacterSheet />
+      <StatusBar style="auto"/>
     </View>
   );
 }

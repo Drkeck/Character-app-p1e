@@ -1,21 +1,21 @@
 {
-    "pathfinder 1st edition example": {
-        "name": "",
-        "race": "",
-        "size": "",
-        "alignment": "",
-        "class": "",
+    "pathfinder": {
+        "name": "Erit",
+        "race": "Elf",
+        "size": "Medium",
+        "alignment": "Chaotic Good",
+        "class": "Ninja",
         "attributes": {
-            "strength": "",
-            "dexterity": "",
-            "constitution": "",
-            "intelligence": "",
-            "wisdom": "",
-            "charisma": ""
+            "strength": 16,
+            "dextarity": 16,
+            "constitution": 12,
+            "inteligence": 16,
+            "wisdom": 16,
+            "charisma": 10
         },
         "health": {
-            "hit die": "",
-            "total": "",
+            "hit die": "d8",
+            "total": "29",
             "current": "",
             "temp": ""
         },
@@ -159,7 +159,7 @@
 
     },
 
-    "Dungeons and dragons 5th edition example": {
+    "DnD": {
         
     }
 }

@@ -5,14 +5,38 @@
         "size": "Medium",
         "alignment": "Chaotic Good",
         "class": "Ninja",
-        "attributes": {
-            "strength": 16,
-            "dextarity": 16,
-            "constitution": 12,
-            "inteligence": 16,
-            "wisdom": 16,
-            "charisma": 10
-        },
+        "attributes": [
+            {   
+                "name":"Strength",
+                "score" : 16,
+                "key": "1"
+            },
+            { 
+                "name":"Dexterity", 
+                "score" : 16,
+                "key": "2"
+            },
+            { 
+                "name":"Constitution", 
+                "score" : 12,
+                "key": "3"
+            },
+            { 
+                "name":"Intelligence", 
+                "score" : 16,
+                "key": "4"
+            },
+            { 
+                "name":"Wisdom", 
+                "score" : 16,
+                "key": "5"
+            },
+            { 
+                "name":"Charisma", 
+                "score" : 10,
+                "key": "6"
+            }
+        ],
         "health": {
             "hit die": "d8",
             "total": "29",
@@ -63,100 +87,96 @@
                         "stalwart": false
                     }
                 }
+            }
+        },
+        "movement": {
+            "base speed": "",
+            "with armor": "",
+            "fast Movement": "",
+            "flying": "",
+            "swim": "",
+            "climb": "",
+            "burrow": ""
+        },
+        "feats":[{}],
+        "specialAbilities": [{}],
+        "traits":[{}],
+        "money":{
+            "Platinum": "",
+            "Gold": "",
+            "Silver": "",
+            "copper": "",
+            "gems": "",
+            "other": ""
+        },
+        "Gear": [{}],
+        "Magic":{
+            "domain/bloodline/school": {
+                "name": "",
+                "abilities": [{}]
             },
-            "movement": {
-                "base speed": "",
-                "with armor": "",
-                "fast Movement": "",
-                "flying": "",
-                "swim": "",
-                "climb": "",
-                "burrow": ""
+            "spell like":[{}],
+            "level 0":{
+                "known": "",
+                "DC": "",
+                "per Day": "",
+                "spells": [{}]
             },
-            "feats":[{}],
-            "special abilities": [{}],
-            "traits":[{}],
-            "money":{
-                "Platinum": "",
-                "Gold": "",
-                "Silver": "",
-                "copper": "",
-                "gems": "",
-                "other": ""
+            "level 1":{
+                "known": "",
+                "DC": "",
+                "per Day": "",
+                "spells": [{}]
             },
-            "Gear": [{}],
-            "Magic":{
-                "domain/bloodline/school": {
-                    "name": "",
-                    "abilities": [{}]
-                },
-                "spell like":[{}],
-                "level 0":{
-                    "known": "",
-                    "DC": "",
-                    "per Day": "",
-                    "spells": [{}]
-                },
-                "level 1":{
-                    "known": "",
-                    "DC": "",
-                    "per Day": "",
-                    "spells": [{}]
-                },
-                "level 2":{
-                    "known": "",
-                    "DC": "",
-                    "per Day": "",
-                    "spells": [{}]
-                },
-                "level 3":{
-                    "known": "",
-                    "DC": "",
-                    "per Day": "",
-                    "spells": [{}]
-                },
-                "level 4":{
-                    "known": "",
-                    "DC": "",
-                    "per Day": "",
-                    "spells": [{}]
-                },
-                "level 5":{
-                    "known": "",
-                    "DC": "",
-                    "per Day": "",
-                    "spells": [{}]
-                },
-                "level 6":{
-                    "known": "",
-                    "DC": "",
-                    "per Day": "",
-                    "spells": [{}]
-                },
-                "level 7":{
-                    "known": "",
-                    "DC": "",
-                    "per Day": "",
-                    "spells": [{}]
-                },
-                "level 8":{
-                    "known": "",
-                    "DC": "",
-                    "per Day": "",
-                    "spells": [{}]
-                },
-                "level 9":{
-                    "known": "",
-                    "DC": "",
-                    "per Day": "",
-                    "spells": [{}]
-                }
+            "level 2":{
+                "known": "",
+                "DC": "",
+                "per Day": "",
+                "spells": [{}]
+            },
+            "level 3":{
+                "known": "",
+                "DC": "",
+                "per Day": "",
+                "spells": [{}]
+            },
+            "level 4":{
+                "known": "",
+                "DC": "",
+                "per Day": "",
+                "spells": [{}]
+            },
+            "level 5":{
+                "known": "",
+                "DC": "",
+                "per Day": "",
+                "spells": [{}]
+            },
+            "level 6":{
+                "known": "",
+                "DC": "",
+                "per Day": "",
+                "spells": [{}]
+            },
+            "level 7":{
+                "known": "",
+                "DC": "",
+                "per Day": "",
+                "spells": [{}]
+            },
+            "level 8":{
+                "known": "",
+                "DC": "",
+                "per Day": "",
+                "spells": [{}]
+            },
+            "level 9":{
+                "known": "",
+                "DC": "",
+                "per Day": "",
+                "spells": [{}]
             }
         }
-
-
-
-
     },
 
     "DnD": {

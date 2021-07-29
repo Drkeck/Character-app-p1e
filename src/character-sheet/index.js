@@ -1,33 +1,42 @@
 import React from "react"
 import Character from "./character-sheet-example.json";
-import { Text, View, ScrollView } from "react-native"
+import { Text, View, ScrollView, FlatList } from "react-native"
+import { renderStats } from "./stats";
+import { styles } from "../../styles";
+import { Card } from "react-native-elements/dist/card/Card";
 
 function CharacterSheet() {
     const {
         pathfinder,
         DnD
-    } = Character
+    } = Character;
+
+    const attributes = pathfinder.attributes;
+    const health = pathfinder.health;
+    const combat = pathfinder.combat;
+    const movement = pathfinder.movement;
+    const feats = pathfinder.feats;
+    const specialAbilities = pathfinder.specialAbilities;
+    const traits = pathfinder.traits;
+    const money = pathfinder.money;
+    const gear = pathfinder.Gear;
+    const magic = pathfinder.Magic;
 
     return(
-        <View>
-        <Text>Character Info</Text>
-            <ScrollView>    
+        <Card>
+            <Card.Title>Test</Card.Title>
                     <Text>Name: {pathfinder.name}</Text>
                     <Text>Class: {pathfinder.class}</Text>
                     <Text>Race: {pathfinder.race}</Text>
                     <Text>Size: {pathfinder.size}</Text>
                     <Text>Alignment: {pathfinder.alignment}</Text>
-                    <View>
-                        <Text>Strength: {pathfinder.attributes.strength} | {(pathfinder.attributes.strength -10)/2}</Text>
-                        <Text>Dexterity: {pathfinder.attributes.dextarity} | {(pathfinder.attributes.dextarity -10)/2}</Text>
-                        <Text>Constitution: {pathfinder.attributes.constitution} | {(pathfinder.attributes.constitution -10)/2}</Text>
-                        <Text>Intelligence: {pathfinder.attributes.inteligence} | {(pathfinder.attributes.inteligence -10)/2}</Text>
-                        <Text>Wisdom: {pathfinder.attributes.wisdom} | {(pathfinder.attributes.wisdom -10)/2}</Text>
-                        <Text>Charisma: {pathfinder.attributes.charisma} | {(pathfinder.attributes.charisma -10)/2}</Text>
-                    </View>
-
-            </ScrollView>
-        </View>
+                    <Text>Attributes:</Text>
+                    <FlatList 
+                        data={attributes}
+                        renderItem={renderStats}
+                        keyExtractor={item => item.key}
+                    />
+        </Card>
     )
 }
 

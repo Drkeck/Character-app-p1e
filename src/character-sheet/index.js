@@ -1,7 +1,7 @@
 import React from "react"
 import Character from "./character-sheet-example.json";
 import { Text, View, ScrollView, FlatList } from "react-native"
-import { renderStats } from "./stats";
+import { renderStats } from "./stats/stats.js";
 import { styles } from "../../styles";
 import { Card } from "react-native-elements/dist/card/Card";
 
@@ -24,7 +24,6 @@ function CharacterSheet() {
 
     return(
         <Card>
-            <Card.Title>Test</Card.Title>
                     <Text>Name: {pathfinder.name}</Text>
                     <Text>Class: {pathfinder.class}</Text>
                     <Text>Race: {pathfinder.race}</Text>
